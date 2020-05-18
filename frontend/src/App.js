@@ -11,6 +11,7 @@ import ContactUs from './pages/ContactUs';
 import Halal from './pages/Halal';
 import HomePage from './pages/HomePage';
 import NavBar from './components/NavBar';
+import OrderMeat from './pages/OrderMeat';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <div>
           <Switch>
             <Route path="/" component={HomePage} exact></Route>
+            <Route path="/order-meat" component={OrderMeat} exact></Route>
             <Route path="/about-us" component={AboutUs} exact></Route>
             <Route path="/halal" component={Halal} exact></Route>
             <Route path="/contact" component={ContactUs} exact></Route>
