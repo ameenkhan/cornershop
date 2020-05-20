@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Menu } from 'antd';
 
 const NavBar = () => (
-	<Menu mode="horizontal">
+	<Menu mode="horizontal" theme="dark">
 		<Menu.Item key="1">
 			<Link to="/about">About Us</Link>
 		</Menu.Item>
@@ -19,5 +19,7 @@ const NavBar = () => (
 			</Menu.Item>
 	</Menu>
 )
+
+
 
 export default NavBar;

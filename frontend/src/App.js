@@ -27,19 +27,16 @@ function App() {
             <NavBar />
           </Header>
           <Content>
-            content
+            <Switch>
+              <Route path="/" component={HomePage} exact></Route>
+              <Route path="/about" component={AboutUs} exact></Route>
+              <Route path="/halal" component={Halal} exact></Route>
+              <Route path="/order-meat" component={OrderMeat} exact></Route>
+              <Route path="/contact" component={ContactUs} exact></Route>
+            </Switch>
           </Content>
-          <Footer>
-            footer
-          </Footer>
+          <Footer style={{ textAlign: 'center' }}>©2020 Apna Farm </Footer>
         </Layout>
-        <Switch>
-          <Route path="/" component={HomePage} exact></Route>
-          <Route path="/about" component={AboutUs} exact></Route>
-          <Route path="/halal" component={Halal} exact></Route>
-          <Route path="/order-meat" component={OrderMeat} exact></Route>
-          <Route path="/contact" component={ContactUs} exact></Route>
-        </Switch>
       </Router>
     </>
   );
