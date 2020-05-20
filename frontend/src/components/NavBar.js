@@ -1,30 +1,23 @@
 import React from 'react';
-import { Button } from 'antd';
 import { Link } from 'react-router-dom';
 
+import { Menu } from 'antd';
+
 const NavBar = () => (
-    <nav>
-        <ul>
-            <li>
-                <Button type="primary">my button</Button>
-            </li>
-            <li>
-                <Link to="/">Logo to home</Link>
-            </li>
-            <li>
-                <Link to="/about-us">About Us</Link>
-            </li>
-            <li>
-                <Link to="/halal">Halal</Link>
-            </li>
-            <li>
-                <Link to="/order-meat">Order Meat</Link>
-            </li>
-            <li>
-                <Link to="/contact">Contact Us</Link>
-            </li>
-        </ul>
-    </nav>
+	<Menu mode="horizontal">
+		<Menu.Item key="1">
+			<Link to="/about">About Us</Link>
+		</Menu.Item>
+			<Menu.Item key="2">
+				<Link to="/halal">Halal</Link>
+			</Menu.Item>
+			<Menu.Item key="3">
+				<Link to="/order-meat">Order Meat</Link>
+			</Menu.Item>
+			<Menu.Item key="4">
+				<Link to="/contact">Contact Us</Link>
+			</Menu.Item>
+	</Menu>
 )
 
 export default NavBar;
