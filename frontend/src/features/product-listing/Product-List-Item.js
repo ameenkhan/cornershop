@@ -2,6 +2,7 @@ import React from 'react';
 import Item from 'antd/lib/list/Item';
 
 function ProductListItem(props) {
+  // expecting a prop with name, image, description, and price properties
   return <div>
     <h3>{ props.product.name }</h3>
     <img
