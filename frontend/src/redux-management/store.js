@@ -1,6 +1,7 @@
 import { createStore, combineReducers } from 'redux';
 import cartReducer from './reducer';
 
+// using combineReducers for scalability
 const rootReducer = combineReducers({
   cart: cartReducer
 })
