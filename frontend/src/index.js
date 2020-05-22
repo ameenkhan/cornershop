@@ -6,6 +6,7 @@ import store from './config/store';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux';
 
+// Provider component makes the store available throughout the component tree
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
