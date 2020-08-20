@@ -3,9 +3,12 @@ const cartReducer = (state=[], action) => {
     case 'ADD':
       return [...state, action.payload]
     
-    case 'REMOVE':
-      const firstMatchIndex = state.indexOf(action.payload)
+    case 'REMOVE_ONE':
+      var firstMatchIndex = state.indexOf(action.payload)
       return state.filter( (item, index) => index !== firstMatchIndex)
+    
+    case 'REMOVE_ALL':
+      return state.filter( item => item.id !== action.payload.id)
 
     default:
       return state
