@@ -5,7 +5,6 @@ const ProductListing = (props) => (
   <>
     <h1>ProductListing Component</h1>
     {props.products.map((product) => {
-      // console.log(product, key)
       return <ProductItem item={product} />
     })}
   </>

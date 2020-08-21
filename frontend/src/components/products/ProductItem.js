@@ -2,7 +2,7 @@ import React from 'react';
 import {useSelector, useDispatch} from 'react-redux';
 
 const ProductItem = (props) => {
-  const counter = useSelector( (state) => state.cart )
+  const cart = useSelector( (state) => state.cart )
   const dispatch = useDispatch()
   return <>
     { console.log(props.item) }
@@ -25,11 +25,11 @@ const ProductItem = (props) => {
       Remove One
     </button>
     <button
-      onClick={( () => dispatch({type: "REMOVE_ALL", payload: props.item}))}
+      onClick={( () => dispatch({type: "REMOVE_ALL_OF_ONE", payload: props.item}))}
     >
       Remove All
     </button>
-    <p>In Cart: { counter.filter(item => item.id == props.item.id).length }</p>
+    <p>In Cart: { cart.filter(item => item.id == props.item.id).length }</p>
   </>
 }
 
