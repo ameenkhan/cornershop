@@ -34,7 +34,7 @@ function App() {
               <Route path="/contact" component={ContactUs} exact></Route>
             </Switch>
           </Content>
-          <Footer style={{ textAlign: 'center' }}>©2020 Apna Farm </Footer>
+          <Footer style={{ textAlign: 'center' }}>©2020 CornerShop </Footer>
         </Layout>
       </Router>
     </>
