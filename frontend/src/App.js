@@ -12,7 +12,7 @@ import Halal from './pages/Halal';
 import HomePage from './pages/HomePage';
 import OrderMeat from './pages/OrderMeat';
 
-import Navbar from './components/Navbar';
+import Navbar from './components/NavBar';
 
 // import { Layout } from 'antd';
 // const { Header, Content, Footer } = Layout;
